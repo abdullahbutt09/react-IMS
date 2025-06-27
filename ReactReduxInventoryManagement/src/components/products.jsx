@@ -75,7 +75,7 @@ const Products = () => {
                 <div><strong>Category:</strong> {prod.category}</div>
                 <div className="mt-3 flex gap-3">
                   <ActionButton color="blue" onClick={() => handleUpdate(prod)}>Update</ActionButton>
-                  <ActionButton color="red" onClick={() => dispatch(removeProduct({ id: prod.id }))}>Delete</ActionButton>
+                  <ActionButton color="red" onClick={() => dispatch(removeProduct(prod.id))}>Delete</ActionButton>
                 </div>
               </div>
             ))}
