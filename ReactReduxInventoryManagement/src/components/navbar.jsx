@@ -15,7 +15,9 @@ const Navbar = () => {
         <Link to="/" 
         state={{ scrollTo: 'features' }}
         className="text-gray-700 hover:text-blue-600 font-medium mt-2">Features</Link>
-        <a href="#start" className="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition">Get Started</a>
+        <Link to="/login" className="text-gray-700 hover:text-blue-600 font-medium mt-2"> Login </Link>
+        <Link to="/signup" className="text-gray-700 hover:text-blue-600 font-medium mt-2"> Sign-Up </Link>
+        <Link to="/signup" className="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition">Get Started</Link>
       </div>
 
       {/* Hamburger Button */}
@@ -30,7 +32,9 @@ const Navbar = () => {
           <Link to="/" 
           state={{ scrollTo: 'features' }}
           className="text-gray-700 hover:text-blue-600 font-medium" onClick={() => setIsOpen(false)}>Features</Link>
-          <a href="#start" className="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition" onClick={() => setIsOpen(false)}>Get Started</a>
+           <Link to="/login" className="text-gray-700 hover:text-blue-600 font-medium" onClick={() => setIsOpen(false)}> Login </Link>
+           <Link to="/signup" className="text-gray-700 hover:text-blue-600 font-medium" onClick={() => setIsOpen(false)}> Sign-Up </Link>
+          <Link to="/signup" className="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition" onClick={() => setIsOpen(false)}>Get Started</Link>
         </div>
       )}
     </nav>
