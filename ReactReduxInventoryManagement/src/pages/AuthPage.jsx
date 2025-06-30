@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaUser, FaEnvelope, FaLock, FaGoogle, FaTwitter, FaInstagram, FaGithub, FaGithubSquare, FaFacebook } from 'react-icons/fa';
+import { FaUser, FaEnvelope, FaLock, FaGoogle, FaTwitter, FaInstagram, FaGithub, FaGithubSquare, FaFacebook, FaLinkedin, FaCode } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const AuthPage = ({ type = 'login' }) => {
@@ -82,10 +82,9 @@ const AuthPage = ({ type = 'login' }) => {
         {/* Social Icons */}
         <div className="flex justify-center gap-6 flex-wrap">
           <SocialButton icon={<FaGoogle />} />
-          <SocialButton icon={<FaTwitter />} />
-          <SocialButton icon={<FaInstagram />} />
+          <SocialButton icon={<FaCode />} />
           <SocialButton icon={<FaGithub />} />
-          <SocialButton icon={<FaFacebook />} />
+          <SocialButton icon={<FaLinkedin />} />
         </div>
       </motion.div>
     </div>
